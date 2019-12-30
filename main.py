@@ -18,8 +18,27 @@ wg_ads = page_soup.findAll("h4", {"class":"headline headline-list-view truncate_
 #list to test against
 wg_list = []
 
+#parse url out of wg_ads
 for wg_ad in wg_ads:
     wg_ad = wg_ad.a["href"]
     wg_list.append(wg_ad)
 
-print(wg_list)
+#test of output wg_list
+#print(wg_list)
+
+
+#list of already found wg's (csv)
+url_list = []
+
+#open csv with already listed wg's
+filename_buffer = "wg-gesucht.csv"
+b = open(filename_buffer, "r+")
+url_csv = csv.reader(b, delimiter=';')
+
+for url in url_csv:
+    url_list.append(url)
+
+b.close()
+
+#test of output url_list
+#print(url_list)
