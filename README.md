@@ -22,7 +22,7 @@ Define your pushover user token (push.py) and your app-token (main.py) before us
 ![URL_main](https://user-images.githubusercontent.com/55713049/71610846-d829e580-2b94-11ea-9f29-a73e8e1a1909.png)
 
 
-**Attention** 
+**ATTENTION** 
 
 The scraper is using BeautifulSoup4, so you have to install it on your machine.
 
