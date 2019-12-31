@@ -10,11 +10,15 @@ Define your pushover profile token (push.py) and your app-token (main.py) before
 **Profile token**
 > Picture missing <
 
+
 **App token**
-> Picture missing <
+
+![App_token_main](https://user-images.githubusercontent.com/55713049/71610794-50dc7200-2b94-11ea-92a1-7bd51e82f726.png)
+
 
 **URL**
 > Picture missing <
+
 
 ## Extra Information ##
 If deployed on a server or raspberry-pi use a crontab to let it run in the background.
