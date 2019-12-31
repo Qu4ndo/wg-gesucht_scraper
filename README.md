@@ -22,6 +22,21 @@ Define your pushover user token (push.py) and your app-token (main.py) before us
 ![URL_main](https://user-images.githubusercontent.com/55713049/71610846-d829e580-2b94-11ea-9f29-a73e8e1a1909.png)
 
 
+**Attention** 
+
+The scraper is using BeautifulSoup4, so you have to install it on your machine.
+
+First install python3-pip with:
+
+```
+sudo apt-install python3-pip
+```
+
+And the Bs4 with:
+```
+pip3 install bs4
+```
+
 ## Extra Information ##
 If deployed on a server or raspberry-pi use a crontab to let it run in the background.
 A good interval would be every 5 minutes.
