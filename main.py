@@ -9,7 +9,7 @@ from push import send_push_message
 # 3. overwrite the csv file and send messages via pushover
 
 #url with filter
-myurl = "https://www.wg-gesucht.de/wg-zimmer-in-Innsbruck.161.0.1.0.html?offer_filter=1&noDeact=1&city_id=161&category=0&rent_type=2&rMax=550&ot%5B%5D=3053&ot%5B%5D=3050&ot%5B%5D=3052&ot%5B%5D=3051&wgSea=2&wgAge=22"
+myurl = "YOUR URL"
 
 uClient = uReq(myurl)
 page_html = uClient.read()
