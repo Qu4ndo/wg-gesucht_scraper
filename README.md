@@ -46,5 +46,5 @@ crontab -e
 ```
 And insert following crontab statement:
 ```
-*/5 * * * * python3 /your/path/to/script/wg-gesucht_scraper/main.py
+*/5 * * * * cd /your/path/to/script/wg-gesucht_scraper && exec python3 main.py
 ```
