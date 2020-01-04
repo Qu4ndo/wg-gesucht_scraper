@@ -1,11 +1,11 @@
 # wg-gesucht_scraper
-Scraper for searching a WG on wg-gesucht.de and notify via Pushover or Telegram bot
+Scraper for searching a WG on wg-gesucht.de and notify via Pushover or telegram bot
 
 ## Functions ##
-After setting up the scraper it will search the predefined url (with your specific filter options) and give you an update via pushover or Telegram bot when new objects are being listed.
+After setting up the scraper it will search the predefined url (with your specific filter options) and give you an update via pushover or telegram bot when new objects are being listed.
 
 ## Before use ##
-Define your preferred way of notification under use_notification (main.py) and set your pushover user-token (push.py) & app-token (main.py) or your Telegram bot-token & bot-chatID (both in telegram.py) before use or there will be no notification. Also add your specific Search URL with the defined filters for your city (main.py).
+Define your preferred way of notification under use_notification (main.py) and set your pushover user-token (push.py) & app-token (main.py) or your telegram bot-token & bot-chatID (both in telegram.py) before use or there will be no notification. Also add your specific Search URL with the defined filters for your city (main.py).
 
 **User-token (Pushover)**
 
