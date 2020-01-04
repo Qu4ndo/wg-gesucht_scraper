@@ -17,6 +17,11 @@ Define your preferred way of notification under use_notification (main.py) and s
 ![App_token_main](https://user-images.githubusercontent.com/55713049/71610794-50dc7200-2b94-11ea-92a1-7bd51e82f726.png)
 
 
+**Bot-token & Bot-ChatID (Telegram)**
+
+![Telegram_Options](https://user-images.githubusercontent.com/55713049/71761561-0d537200-2ecc-11ea-8502-1a41873ce030.png)
+
+
 **URL**
 
 ![URL_main](https://user-images.githubusercontent.com/55713049/71610846-d829e580-2b94-11ea-9f29-a73e8e1a1909.png)
