@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen as uReq
 import csv
 from push import send_push_message
+from telegram import telegram_bot_sendtext
 
 #there are these main chapters:
 # 1. parse html
