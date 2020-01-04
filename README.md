@@ -1,5 +1,5 @@
 # wg-gesucht_scraper
-Scraper for searching a WG on wg-gesucht.de and notify via Pushover or telegram bot
+Scraper for searching a WG on wg-gesucht.de and notify via Pushover or telegram
 
 ## Functions ##
 After setting up the scraper it will search the predefined url (with your specific filter options) and give you an update via pushover or telegram bot when new objects are being listed.
