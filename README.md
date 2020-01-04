@@ -7,6 +7,11 @@ After setting up the scraper it will search the predefined url (with your specif
 ## Before use ##
 Define your preferred way of notification under use_notification (main.py) and set your pushover user-token (push.py) & app-token (main.py) or your telegram bot-token & bot-chatID (both in telegram.py) before use or there will be no notification. Also add your specific Search URL with the defined filters for your city (main.py).
 
+**Use_Notification**
+
+![use_notification](https://user-images.githubusercontent.com/55713049/71762286-ce262080-2ecd-11ea-867e-0047c6b29cde.png)
+
+
 **User-token (Pushover)**
 
 ![user_token_push](https://user-images.githubusercontent.com/55713049/71610831-b3357280-2b94-11ea-81d5-cef353d210fb.png)
