@@ -2,11 +2,15 @@ from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen as uReq
 import csv
 from push import send_push_message
+from telegram import telegram_bot_sendtext
 
 #there are these main chapters:
 # 1. parse html
 # 2. open the csv with already found wg's
 # 3. overwrite the csv file and send messages via pushover
+
+# 1 = Pushover; 2 = Telegram; 3 = Both; 4 = No Notification
+use_notification = 1
 
 #url with filter
 myurl = "YOUR URL"
@@ -67,7 +71,16 @@ for wg in wg_list:
         print(wg)
         add_list.append(wg)
         #CHANGE APP_TOKEN
-        send_push_message("APP_TOKEN", "New WG found!", "https://www.wg-gesucht.de/" + wg)
+        
+        if use_notification == 1:
+            send_push_message("APP_TOKEN", "New WG found!", "https://www.wg-gesucht.de/" + wg)
+        elif use_notification == 2:
+            telegram_bot_sendtext("New WG found: https://www.wg-gesucht.de/" + wg)
+        elif use_notification == 3:
+            send_push_message("APP_TOKEN", "New WG found!", "https://www.wg-gesucht.de/" + wg)
+            telegram_bot_sendtext("New WG found: https://www.wg-gesucht.de/" + wg)
+        elif use_notification == 4:
+            pass
 
 #add already found wgs to add_list
 for url in url_list:
