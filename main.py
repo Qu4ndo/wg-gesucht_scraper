@@ -75,10 +75,10 @@ for wg in wg_list:
         if use_notification == 1:
             send_push_message("APP_TOKEN", "New WG found!", "https://www.wg-gesucht.de/" + wg)
         elif use_notification == 2:
-            telegram_bot_sendtext("New WG found: " + wg)
+            telegram_bot_sendtext("New WG found: https://www.wg-gesucht.de/" + wg)
         elif use_notification == 3:
             send_push_message("APP_TOKEN", "New WG found!", "https://www.wg-gesucht.de/" + wg)
-            telegram_bot_sendtext("New WG found: " + wg)
+            telegram_bot_sendtext("New WG found: https://www.wg-gesucht.de/" + wg)
         elif use_notification == 4:
             pass
 
