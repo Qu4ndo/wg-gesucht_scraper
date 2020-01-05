@@ -1,16 +1,15 @@
 [Basic-Configuration]
 # 1 = Pushover; 2 = Telegram; 3 = Both; 4 = No Notification
 use_notification = 1
-url =
 
 
 [Pushover]
 # Settings if Pushover is used for Notification
-user_token =
+user_token = 
 app_token =
 
 
 [Telegram]
 # Settings if Telegram is used for Notification
 bot_token =
-bot_chatID = 
+bot_chatID =
