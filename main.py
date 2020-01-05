@@ -3,12 +3,16 @@ from urllib.request import urlopen as uReq
 import csv
 from push import send_push_message
 from telegram import telegram_bot_sendtext
-import ConfigParser
+import configparser
 
 #read the config.txt
-config = ConfigParser.ConfigParser()
-config.readfp(open(r'config.txt'))
-variable = config.get('Section_in_config', 'variable_in_config')
+config = configparser.ConfigParser()
+config.read_file(open(r'config.txt'))
+variable = config.get('Basic-Configuration', 'use_notification')
+
+print(variable)
+
+quit()
 
 #there are these main chapters:
 # 1. parse html
