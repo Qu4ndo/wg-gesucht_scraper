@@ -13,6 +13,11 @@ Define your preferred way of notification in the config.txt file under use_notif
 ![config](https://user-images.githubusercontent.com/55713049/71785761-c36da780-3003-11ea-99b2-eeb8a87aed50.png)
 
 
+**URL (main.py)**
+
+![url](https://user-images.githubusercontent.com/55713049/71785790-22332100-3004-11ea-82ed-b13ead70419b.png)
+
+
 **ATTENTION** 
 
 The scraper is using BeautifulSoup4, so you have to install it on your machine.
