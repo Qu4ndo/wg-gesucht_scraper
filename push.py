@@ -1,9 +1,6 @@
 import requests
 
-#Change to your pushover token!
-user_token = 'USER-KEY'
-
-def send_push_message(app_key, title, message):
+def send_push_message(user_token, app_key, title, message):
 	push_data = {
 		'token': app_key,
 		'user': user_token,
