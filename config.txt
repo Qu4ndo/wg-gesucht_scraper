@@ -6,7 +6,7 @@ url = ""
 
 [Pushover]
 # Settings if Pushover is used for Notification
-user-token = ""
+user_token = ""
 app_token = ""
 
 
