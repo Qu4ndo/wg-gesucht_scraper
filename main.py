@@ -3,6 +3,12 @@ from urllib.request import urlopen as uReq
 import csv
 from push import send_push_message
 from telegram import telegram_bot_sendtext
+import ConfigParser
+
+#read the config.txt
+config = ConfigParser.ConfigParser()
+config.readfp(open(r'config.txt'))
+variable = config.get('Section_in_config', 'variable_in_config')
 
 #there are these main chapters:
 # 1. parse html
@@ -71,7 +77,7 @@ for wg in wg_list:
         print(wg)
         add_list.append(wg)
         #CHANGE APP_TOKEN
-        
+
         if use_notification == 1:
             send_push_message("APP_TOKEN", "New WG found!", "https://www.wg-gesucht.de/" + wg)
         elif use_notification == 2:
