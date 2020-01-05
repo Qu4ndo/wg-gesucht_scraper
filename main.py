@@ -11,16 +11,13 @@ config = configparser.ConfigParser()
 config.read_file(open(r'config.txt'))
 use_notification = config.get('Basic-Configuration', 'use_notification')
 myurl = config.get('Basic-Configuration', 'url')
-
 user_token = config.get('Pushover', 'user_token')
 app_token = config.get('Pushover', 'app_token')
 bot_token = config.get('Telegram', 'bot_token')
 bot_chatID = config.get('Telegram', 'bot_chatID')
 
 
-print(bot_token)
 
-quit()
 #read the html of the website
 uClient = uReq(myurl)
 page_html = uClient.read()
@@ -40,10 +37,7 @@ for wg_ad in wg_ads:
     wg_ad = wg_ad.a["href"]
     wg_list.append(wg_ad)
 
-#test of output wg_list
-#print(wg_list)
 
-#######################################################
 
 #list of already found wg's (csv)
 url_list = []
@@ -58,10 +52,7 @@ for url in url_csv:
 
 b.close()
 
-#test of output url_list
-#print(url_list)
 
-#######################################################
 
 #overwrite the csv
 filename_buffer = "wg-gesucht.csv"
