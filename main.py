@@ -1,27 +1,17 @@
+import configparser
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen as uReq
 import csv
 from push import send_push_message
 from telegram import telegram_bot_sendtext
-import configparser
+
 
 #read the config.txt
 config = configparser.ConfigParser()
 config.read_file(open(r'config.txt'))
-use_notificatio = config.get('Basic-Configuration', 'use_notification')
-url = config.get('Basic-Configuration', 'url')
+use_notification = config.get('Basic-Configuration', 'use_notification')
+myurl = config.get('Basic-Configuration', 'url')
 
-
-#there are these main chapters:
-# 1. parse html
-# 2. open the csv with already found wg's
-# 3. overwrite the csv file and send messages via pushover
-
-# 1 = Pushover; 2 = Telegram; 3 = Both; 4 = No Notification
-use_notification = 1
-
-#url with filter
-myurl = "YOUR URL"
 
 uClient = uReq(myurl)
 page_html = uClient.read()
