@@ -8,11 +8,9 @@ import configparser
 #read the config.txt
 config = configparser.ConfigParser()
 config.read_file(open(r'config.txt'))
-variable = config.get('Section_in_config', 'variable_in_config')
+use_notificatio = config.get('Basic-Configuration', 'use_notification')
+url = config.get('Basic-Configuration', 'url')
 
-
-
-quit()
 
 #there are these main chapters:
 # 1. parse html
