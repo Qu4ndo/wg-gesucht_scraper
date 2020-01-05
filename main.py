@@ -10,6 +10,7 @@ from telegram import telegram_bot_sendtext
 config = configparser.ConfigParser()
 config.read_file(open(r'config.txt'))
 use_notification = config.get('Basic-Configuration', 'use_notification')
+use_notification = int(use_notification)
 myurl = config.get('Basic-Configuration', 'url')
 user_token = config.get('Pushover', 'user_token')
 app_token = config.get('Pushover', 'app_token')
