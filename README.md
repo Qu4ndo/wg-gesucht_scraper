@@ -8,6 +8,11 @@ After setting up the scraper it will search the predefined url (with your specif
 Define your preferred way of notification in the config.txt file under use_notification and set your pushover user-token & app-token or your telegram bot-token & bot-chatID before use or there will be no notification. Also add your specific Search URL with the defined filters for your city (main.py).
 
 
+**config.txt**
+
+![config](https://user-images.githubusercontent.com/55713049/71785761-c36da780-3003-11ea-99b2-eeb8a87aed50.png)
+
+
 **ATTENTION** 
 
 The scraper is using BeautifulSoup4, so you have to install it on your machine.
