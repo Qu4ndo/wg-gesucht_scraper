@@ -8,9 +8,9 @@ import configparser
 #read the config.txt
 config = configparser.ConfigParser()
 config.read_file(open(r'config.txt'))
-variable = config.get('Basic-Configuration', 'use_notification')
+variable = config.get('Section_in_config', 'variable_in_config')
 
-print(variable)
+
 
 quit()
 
