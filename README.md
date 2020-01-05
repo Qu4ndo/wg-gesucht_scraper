@@ -5,31 +5,7 @@ Scraper for searching a WG on wg-gesucht.de and notify via Pushover or Telegram
 After setting up the scraper it will search the predefined url (with your specific filter options) and give you an update via pushover or telegram bot when new objects are being listed.
 
 ## Before use ##
-Define your preferred way of notification under use_notification (main.py) and set your pushover user-token (push.py) & app-token (main.py) or your telegram bot-token & bot-chatID (both in telegram.py) before use or there will be no notification. Also add your specific Search URL with the defined filters for your city (main.py).
-
-**Use_Notification**
-
-![use_notification](https://user-images.githubusercontent.com/55713049/71762286-ce262080-2ecd-11ea-867e-0047c6b29cde.png)
-
-
-**User-token (Pushover)**
-
-![user_token_push](https://user-images.githubusercontent.com/55713049/71610831-b3357280-2b94-11ea-81d5-cef353d210fb.png)
-
-
-**App-token (Pushover)**
-
-![App_token_main](https://user-images.githubusercontent.com/55713049/71610794-50dc7200-2b94-11ea-92a1-7bd51e82f726.png)
-
-
-**Bot-token & Bot-ChatID (Telegram)**
-
-![Telegram_Options](https://user-images.githubusercontent.com/55713049/71761561-0d537200-2ecc-11ea-8502-1a41873ce030.png)
-
-
-**URL**
-
-![URL_main](https://user-images.githubusercontent.com/55713049/71610846-d829e580-2b94-11ea-9f29-a73e8e1a1909.png)
+Define your preferred way of notification in the config.txt file under use_notification and set your pushover user-token & app-token or your telegram bot-token & bot-chatID before use or there will be no notification. Also add your specific Search URL with the defined filters for your city (main.py).
 
 
 **ATTENTION** 
@@ -42,7 +18,7 @@ First install python3-pip with:
 sudo apt-install python3-pip
 ```
 
-And the Bs4 with:
+And the Bs4-Modul with:
 ```
 pip3 install bs4
 ```
