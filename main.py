@@ -68,15 +68,14 @@ for wg in wg_list:
     else:
         print(wg)
         add_list.append(wg)
-        #CHANGE APP_TOKEN
 
         if use_notification == 1:
-            send_push_message("APP_TOKEN", "New WG found!", "https://www.wg-gesucht.de/" + wg)
+            send_push_message(user_token, app_token, "New WG found!", "https://www.wg-gesucht.de/" + wg)
         elif use_notification == 2:
-            telegram_bot_sendtext("New WG found: https://www.wg-gesucht.de/" + wg)
+            telegram_bot_sendtext(bot_token, bot_chatID, "New WG found: https://www.wg-gesucht.de/" + wg)
         elif use_notification == 3:
-            send_push_message("APP_TOKEN", "New WG found!", "https://www.wg-gesucht.de/" + wg)
-            telegram_bot_sendtext("New WG found: https://www.wg-gesucht.de/" + wg)
+            send_push_message(user_token, app_token, "New WG found!", "https://www.wg-gesucht.de/" + wg)
+            telegram_bot_sendtext(bot_token, bot_chatID, "New WG found: https://www.wg-gesucht.de/" + wg)
         elif use_notification == 4:
             pass
 
