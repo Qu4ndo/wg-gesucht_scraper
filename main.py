@@ -12,7 +12,16 @@ config.read_file(open(r'config.txt'))
 use_notification = config.get('Basic-Configuration', 'use_notification')
 myurl = config.get('Basic-Configuration', 'url')
 
+user_token = config.get('Pushover', 'user_token')
+app_token = config.get('Pushover', 'app_token')
+bot_token = config.get('Telegram', 'bot_token')
+bot_chatID = config.get('Telegram', 'bot_chatID')
 
+
+print(bot_token)
+
+quit()
+#read the html of the website
 uClient = uReq(myurl)
 page_html = uClient.read()
 uClient.close()
