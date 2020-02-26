@@ -80,7 +80,7 @@ for wg in wg_list:
             send_push_message(user_token, app_token, "New WG found!", "https://www.wg-gesucht.de/" + wg)
             telegram_bot_sendtext(bot_token, bot_chatID, "New WG found: https://www.wg-gesucht.de/" + wg)
         elif use_notification == 4:
-            pass
+            continue
 
 #add already found wgs to add_list
 for url in url_list:
