@@ -25,7 +25,7 @@ The scraper is using BeautifulSoup4, so you have to install it on your machine.
 First install python3-pip with:
 
 ```
-sudo apt-install python3-pip
+sudo apt-get install python3-pip
 ```
 
 And the Bs4-Modul with:
